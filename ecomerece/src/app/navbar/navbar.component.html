@@ -1,0 +1,23 @@
+<!-- navigation.component.html -->
+
+<nav>
+    <div class="left">
+        <img src="assets/assetss/SCLOGO.png" alt="Logo" />
+    </div>
+    <div class="center">
+        <div class="page-name" *ngFor="let page of pages" [routerLink]="['/', page.toLowerCase().replace(' ', '-')]">{{ page }}</div>
+      </div>
+     
+      <div class="right" *ngIf="authenticated; else showLogout">
+        <a routerLink="/sign-login" (click)="logout()" class="login-signup">Logout</a>
+      </div>
+    
+      <ng-template #showLogout>
+        <div class="right">
+          <a routerLink="/sign-login" class="login-signup">Login/Signup</a>
+        </div>
+      </ng-template>
+      
+      
+    </nav>
+

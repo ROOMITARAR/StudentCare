@@ -1,0 +1,45 @@
+/* navigation.component.css */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  .left img {
+    max-height: 40px; 
+  }
+  
+  .left, .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  
+  .page-name {
+    margin: 0 15px;
+  }
+  
+  .right {
+    cursor: pointer;
+  }
+  
+  /* .search{
+   margin-right: 5px;
+  } */
+
+  .login-signup {
+    margin-left: 10px;
+    color: rgb(226, 204, 56);
+    text-decoration: none;
+  }
+  
